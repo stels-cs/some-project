@@ -28,7 +28,9 @@ class App extends React.Component {
 		return (
 			<View activePanel={this.state.activePanel}>
 				<Home id="home" fetchedUser={this.state.fetchedUser} go={this.go}/>
+				{/*Работает хорошо*/}
 				<NoLagCounter id="no-lag" go={this.go}/>
+				{/*Работает плохо*/}
 				<Panel id="lag">
 					<PanelHeader
 						left={<HeaderButton onClick={this.go} data-to="home">
